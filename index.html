@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button class="main-btn">Click Me!!!</button>
+    </div>
+
+    <div class="make-payment__modal-wrapper">
+        <div>
+            <div class="make-payment__modal">
+                <div class="make-payment__header-btns">
+                    <i class="fa-solid fa-arrow-left make-payment__back-btn"></i>
+                    <i class="fa-solid fa-xmark make-payment__close-btn close-btn"></i>
+                </div>
+
+                <div class="make-payment__title">
+                    <h1>Make Payment</h1>
+                </div>
+
+                <div class="make-payment__steps">
+                    <span class="step-1 make-payment__step-1">1</span>
+                    <span class="step-2 make-payment__step-2">2</span>
+                    <span class="step-3 make-payment__step-3">3</span>
+                </div>
+
+                <form class="make-payment__form">
+                    <div class="make-payment__form-name">
+                        <input class="firstname selector" type="firstname" id="firstname" name="firstname" placeholder="First Name" required>
+                            <div class="firstname-validation">
+                                <div class="firstname-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="firstname-invalid__feedback">
+                                    Firstname must be 3-30 letters and English letters only! 😡
+                                </div>
+                            </div>
+                        <input class="lastname selector" type="lastname" id="lastname" name="lastname" placeholder="Last Name" required>
+                        <div class="lastname-validation">
+                            <div class="lastname-valid__feedback">
+                                Correct 😊
+                            </div>
+                            <div class="lastname-invalid__feedback">
+                                Lastname must be 3-30 letters and English letters only! 😡
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="make-payment__form-address">
+                        <input class="email" type="email" id="email" name="email" placeholder="Email Address" required>
+                        <div class="email__validation">
+                            <div class="email-valid__feedback">
+                                Correct 😊
+                            </div>
+                            <div class="email-invalid__feedback">            
+                                Enter the email correctly! 😡
+                            </div>
+                        </div>
+                        <textarea class="address" name="address" id="address" placeholder="Address for Delivery" required></textarea>
+                        <div class="address__validation">
+                            <div class="address-valid__feedback">
+                                Correct 😊
+                            </div>
+                            <div class="address-invalid__feedback">            
+                                Address must be 3-100 letters and English letters only, also each place must be separated by a comma! 😡
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="make-payment__methods">
+                            <div class="make-payment__method-title">
+                                <h3>Select Method of Payment</h3>
+                            </div>
+
+                            <div class="make-payment__method">
+                                <div>
+                                    <img src="./images/Credit or Debit Card.png" alt="Payment-Method">
+                                    <h6 class="method-type__name">Credit Card or Debit</h6>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="checkbox" name="checkbox">
+                                </div>
+                            </div>
+
+                            <div class="make-payment__method">
+                                <div>
+                                    <img src="./images/Paypal.png" alt="Payment-Method">
+                                    <h6 class="method-type__name">Paypal</h6>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="checkbox" name="checkbox">
+                                </div>
+                            </div>
+
+                            <div class="make-payment__method">
+                                <div>
+                                    <img src="./images/Bank Transfer.png" alt="Payment-Method">
+                                    <h6 class="method-type__name">Bank Transfer</h6>
+                                </div>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="checkbox" name="checkbox">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="make-payment__form-tel">
+                            <input class="phone-number" type="tel" id="tel" name="tel" placeholder="Mobile Phone" required>
+                            <div class="phone-number__validation">
+                                <div class="phone-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="phone-invalid__feedback">            
+                                    Enter the phone number correctly! 😡
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="make-payment__btn">
+                    <button class="going-to__confirm-modal">Go to Payment</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-payment__modal-wrapper">
+        <div>
+            <div class="confirm-payment__modal">
+                <div class="confirm-payment__header-btns">
+                    <i class="fa-solid fa-arrow-left confirm-payment__back-btn"></i>
+                    <i class="fa-solid fa-xmark confirm-payment__close-btn close-btn"></i>
+                </div>
+
+                <div class="confirm-payment__title">
+                    <h1>Make Payment</h1>
+                </div>
+
+                <div class="confirm-payment__steps">
+                    <span class="step-1 confirm-payment__step-1">1</span>
+                    <span class="step-2 confirm-payment__step-2">2</span>
+                    <span class="step-3 confirm-payment__step-3">3</span>
+                </div>
+
+                <div class="confirm-payment__body">
+                    <div class="card-img">
+                        <img src="./images/CreditCard.png" alt="Credit Card">
+                    </div>
+
+                    <form class="confirm-payment__form">
+                        <input class="card-number" type="text" id="text" name="text" placeholder="Card Number" required> <br>
+                            <div class="card-number__validation">
+                                <div class="card-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="card-invalid__feedback">            
+                                    Enter the card number correctly! 😡
+                                </div>
+                            </div>
+                        <input class="expiration-date" type="text" id="text" name="text" placeholder="Expiry" required>
+                            <div class="expiration-date__validation">
+                                <div class="expiration-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="expiration-invalid__feedback">            
+                                    Enter the expiration date correctly! 😡
+                                </div>
+                            </div>
+                        <input class="cvv" type="text" id="text" name="text" placeholder="CVV" required> <br>
+                            <div class="cvv__validation">
+                                <div class="cvv-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="cvv-invalid__feedback">            
+                                    Enter the CVV correctly! 😡
+                                </div>
+                            </div>
+                        <input class="holder-number" type="text" id="text" name="text" placeholder="Holder Number" required> <br>
+                            <div class="holder-number__validation">
+                                <div class="holder-valid__feedback">
+                                    Correct 😊
+                                </div>
+                                <div class="holder-invalid__feedback">            
+                                    Enter the holder number correctly! 😡
+                                </div>
+                            </div>
+
+                        <div class="confirm-modal__form-bottom">
+                            <input class="checkbox" type="checkbox" id="checkbox" name="checkbox">
+                            <h6 class="save-title">Save this credit card</h6>
+                        </div>
+                    </form>
+                </div>
+               
+                <div class="confirm-payment__btn">
+                    <button class="going-to__success-modal">Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="success-payment__modal-wrapper">
+        <div>
+            <div class="success-payment__modal">
+                <div class="success-payment__header-btns">
+                    <i class="fa-solid fa-arrow-left success-payment__back-btn"></i>
+                    <i class="fa-solid fa-xmark success-payment__close-btn close-btn"></i>
+                </div>
+
+                <div class="success-payment__title">
+                    <h1>Make Payment</h1>
+                </div>
+
+                <div class="success-payment__steps">
+                    <span class="step-1 success-payment__step-1">1</span>
+                    <span class="step-1 success-payment__step-2">2</span>
+                    <span class="step-3 success-payment__step-3">3</span>
+                </div>
+
+                <div class="success-payment__body">
+                    <div class="success-img">
+                        <img src="./images/Success Icon.png" alt="Success">
+                    </div>
+                    <div class="success-title">
+                        <h2>Success</h2>
+                    </div>
+                </div>
+                
+               
+                <div class="success-payment__btn">
+                    <button class="going-to__main-window">Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+    </body>
+</html>
